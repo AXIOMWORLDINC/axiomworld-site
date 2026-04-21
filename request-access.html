@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Request Access — Axiomworld</title>
+<meta name="description" content="Axiomworld operates sovereign defense infrastructure. All inquiries are reviewed. Not all are accepted." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">Axiomworld</a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="platform.html">Platform</a></li>
+        <li><a href="ai.html">AI</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="request-access.html" class="btn active">Request Access <span class="arrow">→</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-meta"><span>REQUEST ACCESS</span></div>
+    <h1 class="hero-title">All inquiries are reviewed. <em>Not all are accepted.</em></h1>
+    <p class="lede">Axiomworld operates sovereign defense infrastructure. Access is granted to verified defense technology companies, government security agencies, and institutional partners operating within the African security ecosystem.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="align-items: start;">
+
+      <div>
+        <span class="eyebrow">The Form</span>
+        <h2 class="section-title" style="font-size: clamp(26px, 3vw, 36px); margin-bottom: 40px;">Tell us who you are and what you're building.</h2>
+
+        <form class="form-grid" id="accessForm" onsubmit="return handleSubmit(event)">
+          <div class="form-field">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" id="name" name="name" type="text" required />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="org">Organization</label>
+            <input class="form-input" id="org" name="org" type="text" required />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="role">Role / Title</label>
+            <input class="form-input" id="role" name="role" type="text" required />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="country">Country</label>
+            <input class="form-input" id="country" name="country" type="text" required />
+          </div>
+          <div class="form-field form-field--wide">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" id="email" name="email" type="email" required />
+          </div>
+          <div class="form-field form-field--wide">
+            <label class="form-label" for="message">What are you building, or what do you need?</label>
+            <textarea class="form-textarea" id="message" name="message" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn">Submit Request <span class="arrow">→</span></button>
+            <div class="mono" id="formStatus" style="margin-top: 16px; min-height: 1em;"></div>
+          </div>
+        </form>
+      </div>
+
+      <div>
+        <span class="eyebrow">Direct Contact</span>
+        <div class="layer-specs" style="margin-top: 24px;">
+          <div>
+            <span class="label">Inquiries</span>
+            <a href="mailto:contact@axiomworld.io" style="color:var(--text); border-bottom: 1px solid var(--text);">contact@axiomworld.io</a>
+          </div>
+          <div>
+            <span class="label">Headquarters</span>
+            Axiomworld — Kigali, Rwanda
+          </div>
+          <div>
+            <span class="label">Domain</span>
+            axiomworld.io
+          </div>
+          <div>
+            <span class="label">Founded</span>
+            2025
+          </div>
+        </div>
+
+        <div class="body-text" style="margin-top: 48px;">
+          <p><strong style="color:var(--text);">A note on process.</strong> All inquiries are reviewed. Response times vary. If you are a journalist or researcher, please specify in your message. If you represent a defense ministry, procurement office, or institutional partner, please include your official capacity.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section section--black">
+  <div class="container">
+    <div class="statement-body">
+      <p style="color:#fafaf9;">Sovereign by Design.</p>
+      <p style="color:#a3a3a3; font-size: clamp(20px, 2.4vw, 28px);">Africa's right to own its own security infrastructure is not a proposal up for review. It is a self-evident truth. Axiomworld is what you build on top of it.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Axiomworld</div>
+        <div class="footer-tag">Sovereign by Design</div>
+        <div class="footer-addr">
+          Kigali, Rwanda<br>
+          <a href="mailto:contact@axiomworld.io">contact@axiomworld.io</a><br>
+          axiomworld.io
+        </div>
+      </div>
+      <div>
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="platform.html">Axiom Core</a></li>
+          <li><a href="platform.html">Axiom Bridge</a></li>
+          <li><a href="platform.html">Axiom Trust</a></li>
+          <li><a href="platform.html">Axiom Comply</a></li>
+          <li><a href="platform.html">Axiom Launchpad</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="ai.html">AI</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="request-access.html">Request Access</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <div>© 2025 Axiomworld. All rights reserved.</div>
+      <div>Sovereign by Design</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var t = document.getElementById('navToggle');
+    var l = document.getElementById('navLinks');
+    if (t && l) t.addEventListener('click', function(){ l.classList.toggle('open'); });
+  })();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    var f = document.getElementById('accessForm');
+    var status = document.getElementById('formStatus');
+    var d = new FormData(f);
+    var subject = encodeURIComponent('Axiomworld Access Request — ' + (d.get('org') || ''));
+    var body = encodeURIComponent(
+      'Name: ' + (d.get('name') || '') + '\n' +
+      'Organization: ' + (d.get('org') || '') + '\n' +
+      'Role: ' + (d.get('role') || '') + '\n' +
+      'Country: ' + (d.get('country') || '') + '\n' +
+      'Email: ' + (d.get('email') || '') + '\n\n' +
+      (d.get('message') || '')
+    );
+    window.location.href = 'mailto:contact@axiomworld.io?subject=' + subject + '&body=' + body;
+    status.textContent = 'Opening your email client…';
+    return false;
+  }
+</script>
+
+</body>
+</html>
